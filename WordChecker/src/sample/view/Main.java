@@ -25,5 +25,15 @@ public class Main extends Application {
 
         Controller test = new Controller();
 
+        int result;
+
+        test.takeInput();
+        test.checkNull();
+        result = test.wordCounter();
+
+        System.out.println("There are " + result + " words in the box.");
+
+
+
     }
 }

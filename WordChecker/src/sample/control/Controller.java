@@ -5,19 +5,20 @@ import java.util.Scanner;
 public class Controller {
 
 
+    public String text = new String();
 
-    String takeInput(){
+    public void takeInput(){
 
 
         Scanner scanner = new Scanner(System.in);
-        String text = scanner.nextLine();
-         return text;
+        text = scanner.nextLine();
+
     }
 
 
-    void checkNull(String array)
+    public void checkNull()
     {
-       String text = array;
+
 
       if(text.isEmpty())
 
@@ -25,12 +26,12 @@ public class Controller {
 
     }
 
-    int wordCounter(String array)
+    public int wordCounter()
     {
         int wordcount = 0;
         int stringlen = 0;
 
-        String text = array;
+
 
         stringlen = text.length();
 
